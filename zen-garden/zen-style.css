@@ -16,21 +16,39 @@ html {
 body { 
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url() no-repeat bottom right; 
+	color: white; 
+	background: black url(https://designpail.files.wordpress.com/2012/01/zen-garden-1.jpg) no-repeat bottom right; 
+	background-attachment: fixed;
 	margin: 0; 
 	padding: 0;
 	}
 p { 
 	margin-top: 0; 
 	text-align: justify;
+	visibility: inherit;
+	font-size: 20px;
+	transition: 0s zoom;
 	}
+p:hover{
+	visibility: visible;
+	color: #7D775C;
+	zoom:150%;
+	border: 1px black solid;
+	border-radius: 5px;
+	background-color: white;
+	margin: 0px 200px 0px 200px;
+	transition-delay: 1s;
+}
+
 h3 { 
 	font: italic normal 1.4em georgia, sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #7D775C;
 	}
+h3:hover:first-child{
+	visibility: visible;
+}
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
@@ -44,6 +62,7 @@ a:visited {
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
 	color: #9685BA;
+
 	}
 abbr {
 	border-bottom: none;
@@ -93,10 +112,10 @@ header {
 }
 
 .summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
+
+
+
+
 	}
 .summary p {
 	font: italic 1.1em/2.2 georgia; 
