@@ -198,7 +198,7 @@ These only remain for historical design compatibility. They might go away one da
 <script>
 
 // Your code goes here.
-$(function() {
+	$(function() {
 
 	$('h2').on('click', function(){
 
@@ -211,11 +211,14 @@ $(function() {
 	//});
 	$('h3').on('click', function(){
 
-		$('p, ul').slideToggle(1200);
+		var a = $(this).find(':first-child');
+		
+		$('p, ul').fadeToggle(1200);
+		
 
 	});
 
-
+	
 });
 
 

@@ -1,0 +1,126 @@
+<head>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+
+
+
+<<body>
+<style>
+.button-blue{
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	color:black;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height: 1;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	background-color: blue;
+	margin: 25px 25px 25px 25px;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	vertical-align: middle;
+	display: table-cell;
+
+}	
+
+.button-red{
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	color:black;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height: 0;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	background-color: red;
+	margin: 25px 25px 25px 25px;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	vertical-align: middle;
+	display: table-cell;
+}	
+
+.content{
+	color: pink;
+	
+}
+
+.content2{
+	color: purple;
+	
+}
+
+p{
+	text-align: center;
+}
+
+</style>
+<div class="container">
+	<div class="col-sm-6">
+		<div class="button-blue">
+			<h1>
+				button
+			</h1>
+		</div>
+				<p class="content">
+					content...
+				</p>
+
+	</div>
+	<div class="col-sm-6">
+		<div class="button-red">
+			<h2>
+				button 2
+			</h2>
+		</div>
+				<p class="content2">
+					content...
+				</p>
+
+	</div>
+</div>
+
+<script src="jquery.js"></script>
+<script>
+
+// Your code goes here.
+	$(function() {
+
+	$('h1').on('click', function(){
+
+		$('.content').slideToggle();
+
+	});
+	$('h2').on('click', function(){
+
+		$('.content2').slideToggle();
+
+	});
+
+	//$('.summary,.preamble').fadeIn("slow")
+
+	//});
+	//$('h3').on('click', function(){
+
+	//	var a = $(this).find(':first-child');
+		
+	//	$('p, ul').fadeToggle(1200);
+		
+
+	//});
+
+	
+});
+
+
+</script>
+
+</body>
+</html>

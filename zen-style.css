@@ -43,12 +43,12 @@ p {
 	transition-delay: 1s;
 }*/
 
-h3 { 
+/*h3 { 
 	font: italic normal 1.4em georgia, sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #7D775C;
-	}
+	}	*/
 h3:hover:first-child{
 	visibility: visible;
 }
@@ -103,11 +103,8 @@ header h2 {
 
 h2, h3{
 	margin: 50px 0px 50px 0px;
-    color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-
-
 }
 
 header {
@@ -153,26 +150,60 @@ footer a:link, footer a:visited {
 
 ul, .select, .archives, .resources{
 	margin: 50px 100px 10px 100px; 
-
 	background-color: rgb(50, 205, 193);
 	border: 2px solid white;
 	border-radius: 50px;
-	color: floralwhite;
-
 	}
+
 .designer-name{
 	font-size: 18px;
 	text-transform: none;
 }
 
-h2, h3 {
+/*h2, h3 {
 	color: white !important;
 	border-radius: 4px !important;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;
-	background: rgb(28, 184, 65) !important; /* this is a green */
+	background: rgb(28, 184, 65) !important; /* this is a green 
 	border: solid white 1px;
 
-	}
+	}*/	
+
+h2, h3 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:300px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
 
 .button-success {
 	background: rgb(28, 184, 65); /* this is a green */
