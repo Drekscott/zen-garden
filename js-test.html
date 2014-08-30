@@ -6,7 +6,7 @@
 
 <<body>
 <style>
-.button-blue{
+.button-blue,.content2{
 	text-indent:0;
 	border:1px solid #dcdcdc;
 	color:black;
@@ -27,7 +27,7 @@
 
 }	
 
-.button-red{
+.button-red,.content,.link,.link2{
 	text-indent:0;
 	border:1px solid #dcdcdc;
 	color:black;
@@ -62,6 +62,9 @@ p{
 }
 
 </style>
+
+
+
 <div class="container">
 	<div class="col-sm-6">
 		<div class="button-blue">
@@ -72,8 +75,13 @@ p{
 				<p class="content">
 					content...
 				</p>
+				<p class="link">
+					links..
+				</p>
 
 	</div>
+
+
 	<div class="col-sm-6">
 		<div class="button-red">
 			<h2>
@@ -83,9 +91,16 @@ p{
 				<p class="content2">
 					content...
 				</p>
+				<p class="link2">
+					links..
+				</p>
 
 	</div>
 </div>
+
+
+
+
 
 <script src="jquery.js"></script>
 <script>
@@ -93,17 +108,36 @@ p{
 // Your code goes here.
 	$(function() {
 
-	$('h1').on('click', function(){
+	$('.button-blue').on('click', function(){
 
-		$('.content').slideToggle();
-
-	});
-	$('h2').on('click', function(){
-
-		$('.content2').slideToggle();
+		$('.content').fadeToggle();
 
 	});
+	$('.content').on('click', function(){
 
+		$('.link').fadeToggle();
+
+	});
+	$('.button-red').on('click', function(){
+
+		$('.content2').fadeToggle();
+
+	});
+	$('.content2').on('click', function(){
+
+		$('.link2').fadeToggle();
+
+	});
+	$('.link').on('click', function(){
+
+		$('.link,.content').fadeToggle();
+
+	});
+	$('.link2').on('click', function(){
+
+		$('.link2,.content2').fadeToggle();
+
+	});
 	//$('.summary,.preamble').fadeIn("slow")
 
 	//});
