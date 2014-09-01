@@ -6,7 +6,7 @@
 
 	<link rel="stylesheet" type="text/css" media="screen" href="zen-style.css">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
-
+	<link rel="" href="zen-script.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
 	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
@@ -110,31 +110,54 @@ And a few tips on building your CSS file:
 
 
 		<aside class="sidebar" role="complementary">
-			<div class="wrapper">
-
-				<div class="design-selection" id="design-selection">
+		<div class="wrapper">
+			<div class="design-selection" id="design-selection">
 					<h3 class="select">Select a Design:</h3>
-					<nav role="navigation">
-						<ul>
-							<li>
-								<a href="/221/" class="design-name">Mid Century Modern</a> by						<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
-							</li>					<li>
-							<a href="/220/" class="design-name">Garments</a> by						<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
-						</li>					<li>
-						<a href="/219/" class="design-name">Steel</a> by						<a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
-					</li>					<li>
-					<a href="/218/" class="design-name">Apothecary</a> by						<a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
-				</li>					<li>
-				<a href="/217/" class="design-name">Screen Filler</a> by						<a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
-			</li>					<li>
-			<a href="/216/" class="design-name">Fountain Kiss</a> by						<a href="http://jeremycarlson.com." class="designer-name">Jeremy Carlson</a>
-		</li>					<li>
-		<a href="/215/" class="design-name">A Robot Named Jimmy</a> by						<a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
-	</li>					<li>
-	<a href="/214/" class="design-name">Verde Moderna</a> by						<a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
-</li>					</ul>
-</nav>
-</div>
+				<nav role="navigation">
+					<ul>
+						<li>
+							<a href="/221/" class="design-name">Mid Century Modern</a> 
+							by
+							<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
+						</li>					
+						<li>
+							<a href="/220/" class="design-name">Garments</a> 
+							by
+							<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
+						</li>					
+						<li>
+							<a href="/219/" class="design-name">Steel</a> 
+							by
+							<a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
+						</li>					
+						<li>
+							<a href="/218/" class="design-name">Apothecary</a> 
+							by
+							<a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
+						</li>					
+						<li>
+							<a href="/217/" class="design-name">Screen Filler</a> 
+							by
+							<a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
+						</li>					
+						<li>
+							<a href="/216/" class="design-name">Fountain Kiss</a> 
+							by
+							<a href="http://jeremycarlson.com." class="designer-name">Jeremy Carlson</a>
+						</li>
+						<li>
+							<a href="/215/" class="design-name">A Robot Named Jimmy</a> 
+							by
+							<a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
+						</li>
+						<li>
+							<a href="/214/" class="design-name">Verde Moderna</a> 
+							by
+							<a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
+						</li>					
+					</ul>
+				</nav>
+			</div>
 
 <div class="design-archives" id="design-archives">
 	<h3 class="archives">Archives:</h3>
@@ -183,7 +206,8 @@ And a few tips on building your CSS file:
 
 
 			</div>
-
+<script src="jquery.js"></script>
+<script type="text/javascript" src="zen-script.js"></script>
 <!--
 
 These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
@@ -194,35 +218,6 @@ These only remain for historical design compatibility. They might go away one da
 <div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
 <div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
 
-<script src="jquery.js"></script>
-<script>
-
-// Your code goes here.
-	$(function() {
-
-	$('h2').on('click', function(){
-
-		$('.summary,.preamble').slideToggle();
-
-	});
-
-	//$('.summary,.preamble').fadeIn("slow")
-
-	//});
-	$('h3').on('click', function(){
-
-		var a = $(this).find(':first-child');
-		
-		$('p, ul').fadeToggle(1200);
-		
-
-	});
-
-	
-});
-
-
-</script>
 
 </body>
 </html>

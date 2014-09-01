@@ -1,5 +1,6 @@
 <head>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="jquery.js">
 </head>
 
 
@@ -63,11 +64,11 @@ p{
 
 </style>
 
-
+<!-- BEFORE -->
 
 <div class="container">
 	<div class="col-sm-6">
-		<div class="button-blue">
+		<div class="button-blue dropdown">
 			<h1>
 				button
 			</h1>
@@ -84,9 +85,9 @@ p{
 
 	<div class="col-sm-6">
 		<div class="button-red">
-			<h2>
+			<h1>
 				button 2
-			</h2>
+			</h1>
 		</div>
 				<p class="content2">
 					content...
@@ -99,6 +100,23 @@ p{
 </div>
 
 
+<!-- AFTER -->
+<div class="contaier">
+	<div class="dropdown">
+		<a id="dlable" role="button"data-toggle="dropdown" data-target="#" href="./MultiLevelDropDown.html" alt="blank_">
+		Dropdown <span class="caret"></span>
+		</a>		
+			
+			<ul class="dropdown-menu" role="button" aria-labelledby="dLabel">
+					...
+				<li>
+					hi
+				</li>
+			</ul>
+
+
+	</div>
+</div>
 
 
 
@@ -108,9 +126,9 @@ p{
 // Your code goes here.
 	$(function() {
 
-	$('.button-blue').on('click', function(){
+	$(".button-blue h1:first-child, .button-red h1:first-child" ).on('click', function(){
 
-		$('.content').fadeToggle();
+		$('.content,.content2').fadeToggle();
 
 	});
 	$('.content').on('click', function(){
@@ -118,11 +136,11 @@ p{
 		$('.link').fadeToggle();
 
 	});
-	$('.button-red').on('click', function(){
+	//$('div h1:first-child').on('click', function(){
 
-		$('.content2').fadeToggle();
+		//$('.content2').fadeToggle();
 
-	});
+	//});
 	$('.content2').on('click', function(){
 
 		$('.link2').fadeToggle();
