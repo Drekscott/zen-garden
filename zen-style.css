@@ -10,17 +10,16 @@
 
 /* -- basic elements -- */
 html {
-	margin: 0;
-	padding: 0;
+
 	}
+
 body { 
 	font: 75% georgia, sans-serif;
 	color: white; 
 	background: #81A88B url() no-repeat bottom right; 
 	background-attachment: fixed;
-	margin: 0; 
-	padding: 0;
 	}
+
 p { 
 	display: none;
 	margin-top: 0; 
@@ -36,10 +35,11 @@ div > p{
 	border-radius: 50px;
 	background-color: rgb(50, 205, 193);
 	margin: 50px 0px 50px 0px;
-	padding: 100px 0px 100px 0px;
+	padding: 50px 50px 50px 50px;
 	box-shadow: 3px 3px 3px black;
 
 }
+
 div > ul, nav > ul{
 	font-size: 20px;
 	border: 2px solid white;
@@ -49,47 +49,28 @@ div > ul, nav > ul{
 	padding: 50px 0px 50px 0px;
 	box-shadow: 3px 3px 3px black;
 }
-/*p{
-	visibility: visible;
-	color: #81A88B;
-	zoom:150%;
-	border: 1px black solid;
-	border-radius: 5px;
-	background: url(https://designpail.files.wordpress.com/2012/01/zen-garden-1.jpg);
-	background: url(http://www.htmlandcssbook.com/images/slideshow-home/triplicate.jpg); 
-	z-index: 0;
-	background-attachment: fixed;
-	margin: 0px 200px 0px 200px;
-	transition-delay: 1s;
-}*/
 
-/*h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}	*/
 h1:hover, h3:hover{
 	color: white;
 }
+
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: white;
+	font-size: 45px;
 	}
+
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
 	color: #D4CDDC;
 	}
+
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
-
-	}
-
-abbr {
-	border-bottom: none;
+	color: black;
+	zoom: 110%;
 	}
 
 header h1{ 
@@ -110,20 +91,11 @@ header h2 {
 	
 	}
 
-h2, h3{
+h3{
 	margin: 50px 0px 50px 100px;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
-
-/*h2, h3 {
-	color: white !important;
-	border-radius: 4px !important;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;
-	background: rgb(28, 184, 65) !important; /* this is a green 
-	border: solid white 1px;
-
-	}*/	
 
 header {
 	padding-top: 20px;
@@ -147,9 +119,7 @@ footer a:link{
 	}
 
 h3, h1 {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
+
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
 	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
@@ -183,7 +153,7 @@ h3, h1 {
 	box-shadow: 3px 3px 3px black;
 }
 
-/* -- specific divs -- */
+/* -- specific classes -- */
 
 .page-wrapper { 
 	background: url() no-repeat top left; 
@@ -196,17 +166,6 @@ h3, h1 {
 	background-color: yellow;
 }
 
-/*
-.summary, .requirements, .benefits, .participation, .explanation, .design-selection, .design-archives, .summary, .zen-resources{
-	font-size: 20px;
-	border: 2px solid white;
-	border-radius: 50px;
-	background-color: rgb(50, 205, 193);
-	margin: 50px 0px 50px 0px;
-	padding: 0px 25px 0px 25px;
-	}	
-*/
-
 .preamble 
 {
 	clear: right; 
@@ -214,7 +173,7 @@ h3, h1 {
 	}
 .supporting 
 {	
-	padding-left: 10px; 
+
 	margin-bottom: 40px;
 	}
 
@@ -226,92 +185,3 @@ h3, h1 {
 	text-transform: none;
 }
 
-.button-success 
-{
-	background: rgb(28, 184, 65); /* this is a green */
-	}
-
-.button-error 
-{
-	background: rgb(202, 60, 60); /* this is a maroon */
-	}
-
-.button-warning 
-{
-	background: rgb(223, 117, 20); /* this is an orange */
-	}
-
-.button-secondary 
-{
-	background: rgb(66, 184, 221); /* this is a light blue */
-	}
-
-	/*
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url() top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url() no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url() no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url() no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url() no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
-
-
-.extra1 {
-	background: transparent url() top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
-	*/
