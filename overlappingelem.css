@@ -28,7 +28,17 @@ header{
 	height: 525px;
 	padding: 0 20px;
 	display: block;
-	z-index: -1;
+	z-index: 0;
+}
+
+.sidebar{
+  position: absolute;
+    top: 125%;
+    right: 0%;
+	margin: 25px 25px 25px 25px;
+	padding: 25px 25px 25px 25px;
+	line-height: 25px;
+	background-color: #E8CB7B; 
 }
 
 header:hover{
@@ -62,7 +72,6 @@ a:visited {
 
 a:hover, a:focus, a:active { 
 	color: white;
-	zoom: 125%;
 	background-color: green;
 	border-radius: 10px;
 	font-transformation: none;
@@ -89,7 +98,7 @@ abbr {
 	width: 150px;
 	padding: 10px 10px 10px 10px;
 	border-right: 8px solid #FF5050;
-	zoom: 200%;
+	zoom: 125%;
 }
 
 .preamble{
@@ -111,10 +120,10 @@ abbr {
 	background-color: #33CCCC;
 	padding: 10px 10px 10px 10px;
 	border-left: 8px solid #FF5050;
-	position: relative;
-	z-index: -1;
+	position: absolute;
+	z-index: 0;
 	width: 300px;
-	left: 500px;
+	left: 200px;
 	-webkit-transform: rotate(30deg);
     	-moz-transform: rotate(30deg);
     	-o-transform: rotate(30deg);
@@ -127,15 +136,23 @@ abbr {
 	background-color: black;
 	color: white;
 	padding: 10px 10px 10px 10px;
-	border-left: 8px solid #FF5050;
+	border-bottom: 8px solid #FF5050;
+	position: absolute;
+	z-index: 0;
 	width: 300px;
+	left: 200px;
+	-webkit-transform: rotate(30deg);
+    	-moz-transform: rotate(30deg);
+    	-o-transform: rotate(30deg);
+    	-ms-transform: rotate(30deg);
+    	transform: rotate(30deg);
 }
 
 
 .participation{
 	background-color: #FF9999;
 	padding: 5px 5px 5px 5px;
-	border-left: 8px solid #FF5050;
+	border-right: 8px solid #FF5050;
 	position: absolute;
 	z-index: 0;
 	border-radius: 50%;
@@ -145,7 +162,7 @@ abbr {
 	left: 950px;
 	top: 400px;
 	text-align: center;
-	line-height: 60px;
+	line-height: 80px;
 }
 
 .participation:hover{
@@ -162,9 +179,71 @@ abbr {
 	left: 950px;
 	top: 400px;
 	text-align: center;
+	line-height: 80px;
+}
+
+.benefits{
+	background-color: #00FF9E;
+	padding: 5px 5px 5px 5px;
+	border-left: 8px solid #FF5050;
+	position: absolute;
+	z-index: 0;
+	border-radius: 10%;
+	width: 200px;
+	height: 800px; 
+	/* width and height can be anything, as long as they're equal */
+	left: 700px;
+	top: 600px;
+	text-align: center;
 	line-height: 60px;
 }
 
+.benefits:hover{
+	background-color: black;
+	color: white;
+	padding: 5px 5px 5px 5px;
+	border-left: 8px solid #FF5050;
+	position: absolute;
+	z-index: 0;
+	border-radius: 10%;
+	width: 200px;
+	height: 800px; 
+	left: 700px;
+	top: 600px;
+	text-align: center;
+	line-height: 60px;
+}
 
+.requirements{
+	background-color: #75CDFF;
+	padding: 5px 5px 5px 5px;
+	border-right: 8px solid #FF5050;
+	position: absolute;
+	z-index: 0;
+	border-radius: 0%;
+	width: 600px;
+	height: auto; 
+	/* width and height can be anything, as long as they're equal */
+	left: 50px;
+	top: 1000px;
+	text-align: center;
+	line-height: 30px;
+}
 
+.requirements:hover{
+	background-color: black;
+	color: white;
+	padding: 5px 5px 5px 5px;
+	border-left: 8px solid #FF5050;
+	position: absolute;
+	z-index: 0;
+	border-radius: 0%;
+	width: 600px;
+	height: auto; 
+	/* width and height can be anything, as long as they're equal */
+	left: 50px;
+	top: 1000px;
+	text-align: center;
+	line-height: 30px;
+}
 

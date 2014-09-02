@@ -101,24 +101,14 @@
 	$('h1:contains(CSS Zen Garden)').click(function(){
 
 		$( ".summary > p" ).slideToggle(500);
-	
+		$(this).html('Click to Hide');
 	});
 
-	$('h1:contains(CSS Zen Garden)').click(function(){
+//	$('header h1').toggle(function(){
 
 
-		$('h1:contains(CSS Zen Garden)').html('Click to Hide');
-	
-
-	});
-
-	$('h1:contains(Click to Hide)').click(function(){
-
-
-		$('h1:contains(Click to Hide)').html('CSS Zen Garden');
-	
 		
-	});
+
 
 
 	$('h3:contains(Select a Design:)').click(function(){
