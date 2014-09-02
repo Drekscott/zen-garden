@@ -3,65 +3,60 @@
 
 	//$('.intro').fadeIn(1000);
 
-	$('.zen-resources :first-child').on('click', function(){
+	$('h3:contains(Resources)').click(function(){
 
-		$('.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations').slideToggle(1000);
+		$('.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations, header > h2').slideToggle(1000);
 
 	});
 
-	$('.archives').on('click', function(){
+	$('h3:contains(Archives)').click(function(){
 
 		$('.next, .viewall').slideToggle(1000);
 
 	});
 
-	$('h3:contains(Requirements)').on('click', function(){
+	$('h3:contains(Requirements)').click(function(){
 
 		$('.requirements > p').slideToggle(1000);
 
 	});
 
-	$('h3:contains(Benefits)').on('click', function(){
+	$('h3:contains(Benefits)').click(function(){
 
 		$('.benefits > p').slideToggle(1000);
 
 	});
 
-	$('h3:contains(Participation)').on('click', function(){
+	$('h3:contains(Participation)').click(function(){
 
 		$('.participation > p').slideToggle(1000);
 
 	});
 
-	$('h3:contains(So What is This About?)').on('click', function(){
+	$('h3:contains(So What is This About?)').click(function(){
 
 		$('.explanation > p').slideToggle(1000);
 
 	});
 
-	$('h3:contains(The Road to Enlightenment)').on('click', function(){
+	$('h3:contains(The Road to Enlightenment)').click(function(){
 
 		$('.preamble > p').slideToggle(1000);
 
 	});
 
-	$('h1:contains(CSS Zen Garden)').on('click', function(){
+	$('h1:contains(CSS Zen Garden)').click(function(){
 
-		$('.summary > p, header > h2').slideToggle(1000);
-
+		//$('.summary > p').slideToggle(1000);
+		//$('a:contains(html file), a:contains(css file)').fadeIn( "slow" );
+		$( "div > p" ).fadeToggle( "slow" );
 	});
 
-	$('.select').on('click', function(){
+	$('h3:contains(Select a Design:)').click(function(){
 
 //		$("a[href~='/221/']").slideToggle(500);
-		$( '.designer-name, .design-name, li:contains(by)' ).slideToggle(1000)
+		$( '.designer-name, .design-name, li:contains(by)').slideToggle(1000)
 //		$( this ).toggleClass("h3");
-
-	});
-
-	$('.design-archives :first-child').on('click', function(){
-
-		$('').slideToggle(1000);
 
 	});
 

@@ -8,14 +8,13 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 
-/* basic elements */
+/* -- basic elements -- */
 html {
 	margin: 0;
 	padding: 0;
 	}
 body { 
 	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
 	color: white; 
 	background: #81A88B url() no-repeat bottom right; 
 	background-attachment: fixed;
@@ -23,12 +22,33 @@ body {
 	padding: 0;
 	}
 p { 
+	display: none;
 	margin-top: 0; 
 	text-align: justify;
 	visibility: inherit;
-	font-size: 20px;
-	transition: 0s zoom;
+	font-size: 35px;
+	z-index: 1;
 	}
+
+div > p{
+	font-size: 20px;
+	border: 2px solid white;
+	border-radius: 50px;
+	background-color: rgb(50, 205, 193);
+	margin: 50px 0px 50px 0px;
+	padding: 100px 0px 100px 0px;
+	box-shadow: 3px 3px 3px black;
+
+}
+div > ul, nav > ul{
+	font-size: 20px;
+	border: 2px solid white;
+	border-radius: 50px;
+	background-color: #8EF5CE;
+	margin: 50px 0px 50px 0px;
+	padding: 50px 0px 50px 0px;
+	box-shadow: 3px 3px 3px black;
+}
 /*p{
 	visibility: visible;
 	color: #81A88B;
@@ -49,8 +69,8 @@ p {
 	margin-bottom: 0; 
 	color: #7D775C;
 	}	*/
-h3:hover:first-child{
-	visibility: visible;
+h1:hover, h3:hover{
+	color: white;
 }
 a:link { 
 	font-weight: bold; 
@@ -67,22 +87,10 @@ a:hover, a:focus, a:active {
 	color: #9685BA;
 
 	}
+
 abbr {
 	border-bottom: none;
 	}
-
-
-/* specific divs */
-.page-wrapper { 
-	background: url() no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.clicked{
-	background-color: yellow;
-}
 
 header h1{ 
 	float: left;
@@ -91,65 +99,21 @@ header h1{
 	}
 
 header h2 { 
-	margin: 200px 100px 100px 100px;
+	position: fixed;
+	margin: 0px 0px 100px 800px;
+	padding-right: 400px;
 	font-size: 45px;
 	text-align: center;
+	top: 0;
+	z-index: -1;
+	border-bottom: 14px solid black;
+	
 	}
 
 h2, h3{
 	margin: 50px 0px 50px 100px;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-header {
-	padding-top: 20px;
-	height: 87px;
-
-}
-
-.banner{
-
-}
-
-.summary {
-	
-	}
-
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	margin: 150px 150px 150px 150px;
-	}
-
-#zen-summary, .requirements, .benefits, .participation, .explanation, #zen-preamble, .design-selection, .design-archives, .summary, .zen-resources{
-	font-size: 35px;
-	border: 2px solid white;
-	border-radius: 50px;
-	background-color: rgb(50, 205, 193);
-	margin: 50px 0px 50px 0px;
-	padding: 0px 25px 0px 25px;
-	}	
-
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
-
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
-
-.designer-name{
-	font-size: 18px;
-	text-transform: none;
 }
 
 /*h2, h3 {
@@ -160,6 +124,27 @@ footer a:link, footer a:visited {
 	border: solid white 1px;
 
 	}*/	
+
+header {
+	padding-top: 20px;
+	height: 87px;
+
+}
+
+footer { 
+	text-align: center; 
+	position: fixed;
+	right: 6px;
+	top: 55px;
+	font-size: 18px;
+	z-index: -1;
+	text-shadow: 5px 5px 5px black;
+	}
+
+footer a:link{ 
+	margin-right: 20px; 
+
+	}
 
 h3, h1 {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -195,21 +180,69 @@ h3, h1 {
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #ffffff;
+	box-shadow: 3px 3px 3px black;
 }
 
-.button-success {
+/* -- specific divs -- */
+
+.page-wrapper { 
+	background: url() no-repeat top left; 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+
+.clicked{
+	background-color: yellow;
+}
+
+/*
+.summary, .requirements, .benefits, .participation, .explanation, .design-selection, .design-archives, .summary, .zen-resources{
+	font-size: 20px;
+	border: 2px solid white;
+	border-radius: 50px;
+	background-color: rgb(50, 205, 193);
+	margin: 50px 0px 50px 0px;
+	padding: 0px 25px 0px 25px;
+	}	
+*/
+
+.preamble 
+{
+	clear: right; 
+
+	}
+.supporting 
+{	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}
+
+
+
+.designer-name
+{
+	font-size: 18px;
+	text-transform: none;
+}
+
+.button-success 
+{
 	background: rgb(28, 184, 65); /* this is a green */
 	}
 
-.button-error {
+.button-error 
+{
 	background: rgb(202, 60, 60); /* this is a maroon */
 	}
 
-.button-warning {
+.button-warning 
+{
 	background: rgb(223, 117, 20); /* this is an orange */
 	}
 
-.button-secondary {
+.button-secondary 
+{
 	background: rgb(66, 184, 221); /* this is a light blue */
 	}
 
