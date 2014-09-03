@@ -2,60 +2,28 @@
 	$(function() {
 
 	//$('.intro').fadeIn(1000);
+	$('h1:contains(CSS Zen Garden)').click(function(){
 
-	$('h3:contains(Resources)').click(function(){
+		$('.summary > p').slideToggle(500);	
 
-		$('.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations, header > h2').fadeToggle(500);
-
-	});
-
-	$('h3:contains(Resources)').click(function(){
-
-
-		$('h3:contains(Resources)').html('Click to Hide');
-	
+    	$(this).toggleText("CSS Zen Garden", "Click to Hide");
 
 	});
 
-	$('h3:contains(Archives)').click(function(){
+	$('h3:contains(The Road to Enlightenment)').click(function(){
 
-		$('.next, .viewall').slideToggle(500);
+		$('.preamble > p').slideToggle(500);
 
-	});
-
-	$('h3:contains(Archives)').click(function(){
-
-
-		$('h3:contains(Archives)').html('Click to Hide');
-	
+    	$(this).toggleText("The Road to Enlightenment", "Click to Hide");
 
 	});
 
-	$('h3:contains(Requirements)').click(function(){
 
-		$('.requirements > p').slideToggle(500);
+	$('h3:contains(So What is This About?)').click(function(){
 
-	});
+		$('.explanation > p').slideToggle(500);
 
-	$('h3:contains(Requirements)').click(function(){
-
-
-		$('h3:contains(Requirements)').html('Click to Hide');
-	
-
-	});
-
-	$('h3:contains(Benefits)').click(function(){
-
-		$('.benefits > p').slideToggle(500);
-
-	});
-
-	$('h3:contains(Benefits)').click(function(){
-
-
-		$('h3:contains(Benefits)').html('Click to Hide');
-	
+    	$(this).toggleText("So What is This About?", "Click to Hide");
 
 	});
 
@@ -63,68 +31,50 @@
 
 		$('.participation > p').slideToggle(500);
 
-	});
-
-	$('h3:contains(Participation)').click(function(){
-
-
-		$('h3:contains(Participation)').html('Click to Hide');
-	
+    	$(this).toggleText("Participation", "Click to Hide");
 
 	});
 
-	$('h3:contains(So What is This About?)').click(function(){
+	$('h3:contains(Benefits)').click(function(){
 
-		$('.explanation > p').slideToggle(500);
+		$('.benefits > p').slideToggle(500);
 
-	});
-
-	$('h3:contains(So What is This About?)').click(function(){
-
-
-		$('h3:contains(So What is This About?)').html('Click to Hide');
-	
-	});
-
-	$('h3:contains(The Road to Enlightenment)').click(function(){
-
-		$('.preamble > p').slideToggle(500);
+    	$(this).toggleText("Benefits", "Click to Hide");
 
 	});
 
-	$('h3:contains(The Road to Enlightenment)').click(function(){
+	$('h3:contains(Requirements)').click(function(){
 
-		$('h3:contains(The Road to Enlightenment)').html('Click to Hide');
-	
+		$('.requirements > p').slideToggle(500);
+
+    	$(this).toggleText("Requirements", "Click to Hide");
+
 	});
-
-	$('h1:contains(CSS Zen Garden)').click(function(){
-
-		$( ".summary > p" ).slideToggle(500);
-		$(this).html('Click to Hide');
-	});
-
-//	$('header h1').toggle(function(){
-
-
-		
-
 
 
 	$('h3:contains(Select a Design:)').click(function(){
 
-//		$("a[href~='/221/']").slideToggle(500);
 		$( '.designer-name, .design-name, li:contains(by)').slideToggle(500);
-//		$( this ).toggleClass("h3");
+
+		$(this).toggleText("Select a Design:", "Click to Show");
 
 	});
 
-	$('h3:contains(Select a Design:)').click(function(){
+	$('h3:contains(Archives)').click(function(){
 
+		$('.next, .viewall').slideToggle(500);
 
-		$('h3:contains(Select a Design:)').html('Click to Show');
-	
+    	$(this).toggleText("Archives", "Click to Show");
 
 	});
+
+	$('h3:contains(Resources)').click(function(){
+
+		$('.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations').slideToggle(500);
+
+    	$(this).toggleText("Resources", "Click to Show");
+
+	});
+
 
 });

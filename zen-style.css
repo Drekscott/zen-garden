@@ -41,6 +41,7 @@ div > p{
 }
 
 div > ul, nav > ul{
+	position: relative;
 	font-size: 20px;
 	border: 2px solid white;
 	border-radius: 50px;
@@ -48,6 +49,10 @@ div > ul, nav > ul{
 	margin: 50px 0px 50px 0px;
 	padding: 50px 0px 50px 0px;
 	box-shadow: 3px 3px 3px black;
+	width: 300px;
+	height: auto;
+	left: 100px;
+
 }
 
 h1:hover, h3:hover{
@@ -58,7 +63,7 @@ a:link {
 	font-weight: bold; 
 	text-decoration: none; 
 	color: white;
-	font-size: 45px;
+	font-size: 20px;
 	}
 
 a:visited { 
@@ -179,9 +184,24 @@ h3, h1 {
 
 
 
-.designer-name
-{
-	font-size: 18px;
-	text-transform: none;
+.design-selection{
+	position: absolute;
+	right: 10px !important;
+	bottom: 10px;
+
 }
+
+.zen-resources{
+	position: absolute;
+	right: 400px !important;
+	bottom: 10px;
+
+}
+
+.design-archives{
+	position: absolute;
+	right: 800px !important;
+	bottom: 10px;
+}
+
 

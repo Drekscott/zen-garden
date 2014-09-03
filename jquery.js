@@ -10241,6 +10241,24 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 	});
 });
 
+/*
+Jquery Extension: toggleText() method
+http://thetimbanks.com/2011/03/22/jquery-extension-toggletext-method/
+9/3/14
+-- Marcus Shepherd
+*/
+jQuery.fn.toggleText = function (value1, value2) {
+    return this.each(function () {
+        var $this = $(this),
+            text = $this.text();
+ 
+        if (text.indexOf(value1) > -1)
+            $this.text(text.replace(value1, value2));
+        else
+            $this.text(text.replace(value2, value1));
+    });
+};
+
 
 // The number of elements contained in the matched element set
 jQuery.fn.size = function() {
